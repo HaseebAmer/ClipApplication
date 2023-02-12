@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1093450177426-a5grkini4m9i82rf3nsgg3du8gqp6tk6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1093450177426-a5grkini4m9i82rf3nsgg3du8gqp6tk6</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBzN3vqlnYYyNXIZqvZqdOMriScDRJV3hY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1093450177426</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>haseebamer.todolist</string>
+	<key>PROJECT_ID</key>
+	<string>clipboardapplication</string>
+	<key>STORAGE_BUCKET</key>
+	<string>clipboardapplication.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1093450177426:ios:e392a630c1d79b2f3eff4b</string>
+</dict>
+</plist>
