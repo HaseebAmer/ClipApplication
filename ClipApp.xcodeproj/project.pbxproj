@@ -10,34 +10,34 @@
 		4905E41F2986756000CC2B91 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4905E41E2986756000CC2B91 /* FirebaseAuth */; };
 		4905E4212986756000CC2B91 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4905E4202986756000CC2B91 /* FirebaseFirestore */; };
 		4905E4232986761400CC2B91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4905E4222986761400CC2B91 /* GoogleService-Info.plist */; };
-		491A93CC2998C26600E62D00 /* viewStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A93CB2998C26600E62D00 /* viewStructs.swift */; };
+		491A93CC2998C26600E62D00 /* viewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A93CB2998C26600E62D00 /* viewStruct.swift */; };
 		4937B317296F741400B85BFF /* cellStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4937B316296F741400B85BFF /* cellStruct.swift */; };
 		49A500AA298D266200572FEC /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A500A9298D266200572FEC /* MainWindowController.swift */; };
 		49A500AC298D270900572FEC /* signUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A500AB298D270900572FEC /* signUpVC.swift */; };
 		49A500AF298E4A5500572FEC /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A500AD298E4A5500572FEC /* loginVC.swift */; };
-		49A500B4299122DC00572FEC /* copiedDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A500B3299122DC00572FEC /* copiedDoc.swift */; };
+		49A500B4299122DC00572FEC /* copiedDocStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A500B3299122DC00572FEC /* copiedDocStruct.swift */; };
 		49A500B82993841000572FEC /* AssetFile.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A500B72993841000572FEC /* AssetFile.xcassets */; };
 		49D7B96529684D0600913ADA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D7B96429684D0600913ADA /* AppDelegate.swift */; };
-		49D7B96729684D0600913ADA /* mainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D7B96629684D0600913ADA /* mainView.swift */; };
+		49D7B96729684D0600913ADA /* mainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D7B96629684D0600913ADA /* mainVC.swift */; };
 		49D7B96C29684D0800913ADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D7B96B29684D0800913ADA /* Assets.xcassets */; };
 		49D7B96F29684D0800913ADA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D7B96D29684D0800913ADA /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4905E4222986761400CC2B91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		491A93CB2998C26600E62D00 /* viewStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewStructs.swift; sourceTree = "<group>"; };
+		491A93CB2998C26600E62D00 /* viewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewStruct.swift; sourceTree = "<group>"; };
 		4937B316296F741400B85BFF /* cellStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellStruct.swift; sourceTree = "<group>"; };
 		49A500A9298D266200572FEC /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		49A500AB298D270900572FEC /* signUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpVC.swift; sourceTree = "<group>"; };
 		49A500AD298E4A5500572FEC /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
-		49A500B3299122DC00572FEC /* copiedDoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = copiedDoc.swift; sourceTree = "<group>"; };
+		49A500B3299122DC00572FEC /* copiedDocStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = copiedDocStruct.swift; sourceTree = "<group>"; };
 		49A500B72993841000572FEC /* AssetFile.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssetFile.xcassets; sourceTree = "<group>"; };
 		49D7B96129684D0600913ADA /* ClipApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D7B96429684D0600913ADA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49D7B96629684D0600913ADA /* mainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainView.swift; sourceTree = "<group>"; };
+		49D7B96629684D0600913ADA /* mainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainVC.swift; sourceTree = "<group>"; };
 		49D7B96B29684D0800913ADA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49D7B96E29684D0800913ADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		49D7B97029684D0800913ADA /* todolist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = todolist.entitlements; sourceTree = "<group>"; };
+		49D7B97029684D0800913ADA /* ClipApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClipApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +53,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4911458229992EFA00EFC464 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				49A500AB298D270900572FEC /* signUpVC.swift */,
+				49A500AD298E4A5500572FEC /* loginVC.swift */,
+				49D7B96629684D0600913ADA /* mainVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4911458329992F4300EFC464 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				491A93CB2998C26600E62D00 /* viewStruct.swift */,
+				4937B316296F741400B85BFF /* cellStruct.swift */,
+				49A500B3299122DC00572FEC /* copiedDocStruct.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
 		49D7B95829684D0600913ADA = {
 			isa = PBXGroup;
 			children = (
-				49D7B96329684D0600913ADA /* todolist */,
+				49D7B96329684D0600913ADA /* ClipApp */,
 				49D7B96229684D0600913ADA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,24 +89,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		49D7B96329684D0600913ADA /* todolist */ = {
+		49D7B96329684D0600913ADA /* ClipApp */ = {
 			isa = PBXGroup;
 			children = (
-				49D7B96429684D0600913ADA /* AppDelegate.swift */,
-				49D7B96629684D0600913ADA /* mainView.swift */,
-				491A93CB2998C26600E62D00 /* viewStructs.swift */,
-				49A500B3299122DC00572FEC /* copiedDoc.swift */,
 				49A500A9298D266200572FEC /* MainWindowController.swift */,
+				49D7B96429684D0600913ADA /* AppDelegate.swift */,
+				4911458329992F4300EFC464 /* Structs */,
+				4911458229992EFA00EFC464 /* ViewControllers */,
 				49D7B96B29684D0800913ADA /* Assets.xcassets */,
 				49A500B72993841000572FEC /* AssetFile.xcassets */,
 				49D7B96D29684D0800913ADA /* Main.storyboard */,
-				49A500AB298D270900572FEC /* signUpVC.swift */,
-				49A500AD298E4A5500572FEC /* loginVC.swift */,
-				4937B316296F741400B85BFF /* cellStruct.swift */,
 				4905E4222986761400CC2B91 /* GoogleService-Info.plist */,
-				49D7B97029684D0800913ADA /* todolist.entitlements */,
+				49D7B97029684D0800913ADA /* ClipApp.entitlements */,
 			);
-			path = todolist;
+			path = ClipApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,11 +187,11 @@
 				4937B317296F741400B85BFF /* cellStruct.swift in Sources */,
 				49A500AA298D266200572FEC /* MainWindowController.swift in Sources */,
 				49A500AC298D270900572FEC /* signUpVC.swift in Sources */,
-				49A500B4299122DC00572FEC /* copiedDoc.swift in Sources */,
+				49A500B4299122DC00572FEC /* copiedDocStruct.swift in Sources */,
 				49A500AF298E4A5500572FEC /* loginVC.swift in Sources */,
-				49D7B96729684D0600913ADA /* mainView.swift in Sources */,
+				49D7B96729684D0600913ADA /* mainVC.swift in Sources */,
 				49D7B96529684D0600913ADA /* AppDelegate.swift in Sources */,
-				491A93CC2998C26600E62D00 /* viewStructs.swift in Sources */,
+				491A93CC2998C26600E62D00 /* viewStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = todolist/todolist.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ClipApp/ClipApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -336,7 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = todolist/todolist.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ClipApp/ClipApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
