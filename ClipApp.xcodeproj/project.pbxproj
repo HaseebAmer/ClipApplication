@@ -53,24 +53,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4911458229992EFA00EFC464 /* ViewControllers */ = {
+		4911458229992EFA00EFC464 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				49A500A9298D266200572FEC /* MainWindowController.swift */,
 				49A500AB298D270900572FEC /* signUpVC.swift */,
 				49A500AD298E4A5500572FEC /* loginVC.swift */,
 				49D7B96629684D0600913ADA /* mainVC.swift */,
 			);
-			path = ViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		4911458329992F4300EFC464 /* Structs */ = {
+		4911458329992F4300EFC464 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				491A93CB2998C26600E62D00 /* viewStruct.swift */,
 				4937B316296F741400B85BFF /* cellStruct.swift */,
-				49A500B3299122DC00572FEC /* copiedDocStruct.swift */,
 			);
-			path = Structs;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		49D7B95829684D0600913ADA = {
@@ -92,10 +91,10 @@
 		49D7B96329684D0600913ADA /* ClipApp */ = {
 			isa = PBXGroup;
 			children = (
-				49A500A9298D266200572FEC /* MainWindowController.swift */,
 				49D7B96429684D0600913ADA /* AppDelegate.swift */,
-				4911458329992F4300EFC464 /* Structs */,
-				4911458229992EFA00EFC464 /* ViewControllers */,
+				49F486ED299E3ED0003A6C55 /* Models */,
+				4911458329992F4300EFC464 /* Views */,
+				4911458229992EFA00EFC464 /* Controllers */,
 				49D7B96B29684D0800913ADA /* Assets.xcassets */,
 				49A500B72993841000572FEC /* AssetFile.xcassets */,
 				49D7B96D29684D0800913ADA /* Main.storyboard */,
@@ -103,6 +102,15 @@
 				49D7B97029684D0800913ADA /* ClipApp.entitlements */,
 			);
 			path = ClipApp;
+			sourceTree = "<group>";
+		};
+		49F486ED299E3ED0003A6C55 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				491A93CB2998C26600E62D00 /* viewStruct.swift */,
+				49A500B3299122DC00572FEC /* copiedDocStruct.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

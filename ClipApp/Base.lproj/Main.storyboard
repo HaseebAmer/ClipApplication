@@ -734,7 +734,7 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" red="0.021815773099660873" green="0.029143638908863068" blue="0.032499250024557114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <size key="minSize" width="333" height="197"/>
+                                            <size key="minSize" width="295" height="197"/>
                                             <size key="maxSize" width="399" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
@@ -888,7 +888,7 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" red="0.021815773099660873" green="0.029143638908863068" blue="0.032499250024557114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <size key="minSize" width="324" height="193"/>
+                                            <size key="minSize" width="303" height="193"/>
                                             <size key="maxSize" width="577" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
