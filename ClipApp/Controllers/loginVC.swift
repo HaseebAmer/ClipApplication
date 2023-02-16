@@ -29,17 +29,14 @@ class loginVC: NSViewController {
         mailCell.layer?.shadowOpacity = 0
         passCell.layer?.shadowOpacity = 0
         
+        let attrList = [NSAttributedString.Key.foregroundColor: NSColor.darkGray,
+                        NSAttributedString.Key.font : NSFont.systemFont(ofSize: 11)]
+
         mailCell.placeholderAttributedString =
-        NSAttributedString(string:"Enter email",
-                           attributes:
-                            [NSAttributedString.Key.foregroundColor: NSColor.darkGray,
-                             NSAttributedString.Key.font : NSFont.systemFont(ofSize: 11)])
+        NSAttributedString(string:"Enter email", attributes: attrList)
         
         passCell.placeholderAttributedString =
-        NSAttributedString(string:"Enter password",
-                           attributes:
-                            [NSAttributedString.Key.foregroundColor: NSColor.darkGray,
-                             NSAttributedString.Key.font : NSFont.systemFont(ofSize: 11)])
+        NSAttributedString(string:"Enter password",attributes: attrList)
 
 
     }
@@ -60,14 +57,8 @@ class loginVC: NSViewController {
         passwordCell = passCell?.stringValue ?? ""
         
         self.errorMessage.stringValue = "Loading..."
-        Auth.auth().signIn(withEmail: emailCell, password: passwordCell) {result, error in
-            if error != nil {
-                self.errorMessage.stringValue = error!.localizedDescription
-            } else {
-                if let mainWC = self.view.window?.windowController as? MainWindowController {
-                    mainWC.mainContentVC()
-                }
-            }
+        Task {
+            await fetchData()
         }
     }
     
@@ -79,3 +70,16 @@ class loginVC: NSViewController {
     }
 }
 
+extension loginVC {
+    func fetchData() async {
+        Auth.auth().signIn(withEmail: emailCell, password: passwordCell) {result, error in
+            if error != nil {
+                self.errorMessage.stringValue = error!.localizedDescription
+            } else {
+                if let mainWC = self.view.window?.windowController as? MainWindowController {
+                    mainWC.mainContentVC()
+                }
+            }
+        }
+    }
+}

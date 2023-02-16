@@ -66,25 +66,8 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         let db = Firestore.firestore()
         
         
-        db.collection(Firebase.Auth.auth().currentUser!.uid).order(by: "time").getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                for doc in querySnapshot!.documents {
-                    let dbItem = CopiedDoc(
-                        html: doc["html"] as! String,
-                        rtf: doc["rtf"] as! String,
-                        time: doc["time"] as! String,
-                        plaintext: doc["plaintext"] as! String)
-                    
-                    self.dbArr.append(dbItem)
-                        
-                    let row  = self.dbArr.count
-                    if row >= 0 {
-                        self.tableView.insertRows(at: IndexSet(integer: row - 1), withAnimation: .slideUp)
-                    }
-                }
-            }
+        Task {
+            await setFirebaseDataInTable(db: db)
         }
     }
 
@@ -139,12 +122,11 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         
         let dbItem = CopiedDoc(html: html, rtf: rtf, time: time, plaintext: plaintext)
 
-        db.collection(Firebase.Auth.auth().currentUser!.uid).document().setData([
-            "html": html,
-            "time": time,
-            "rtf": rtf,
-            "plaintext": plaintext
-        ])
+
+        Task {
+            
+            await appendtoFirebaseUpdateTable(db:db)
+        }
         
         self.dbArr.insert(dbItem, at: 0)
         self.tableView.beginUpdates()
@@ -196,42 +178,28 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         var d : NSDictionary? = nil
         let contentHTML = dbArr[row].html
         let contentRTF = dbArr[row].rtf
+        
+        let errString =  NSAttributedString(string: "This content is unavailable", attributes: [NSAttributedString.Key.foregroundColor: NSColor.white, NSAttributedString.Key.font : NSFont.systemFont(ofSize: 14)])
 
         if contentHTML.removeExtraSpaces() != htmlWrapping {
             let dataHTML = Data(contentHTML.utf8)
             
-            attributedHTML = (try? NSAttributedString(
-                                        data: dataHTML,
-                                        options: [.documentType: NSAttributedString.DocumentType.html],
-                                        documentAttributes: &d)) ?? NSAttributedString(string:"")
+            attributedHTML = (try? NSAttributedString(data: dataHTML,options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: &d)) ?? NSAttributedString(string:"")
             
             textView.textStorage?.setAttributedString(attributedHTML)
         } else {
-            textView.textStorage?.setAttributedString(
-                NSAttributedString(string: "          This content is unavailable",
-                                     attributes:
-                                     [NSAttributedString.Key.foregroundColor: NSColor.white,
-                                      NSAttributedString.Key.font : NSFont.systemFont(ofSize: 14)]
-                                   ))
+            textView.textStorage?.setAttributedString(errString)
         }
         
         if contentRTF.removeExtraSpaces() != "" {
             let dataRTF = Data(contentRTF.utf8)
             
-            attributedRTF = (try? NSAttributedString(
-                                    data: dataRTF,
-                                    options: [.documentType: NSAttributedString.DocumentType.rtf],
-                                    documentAttributes: &d)) ?? NSAttributedString(string: "")
+            attributedRTF = (try? NSAttributedString(data: dataRTF,options: [.documentType: NSAttributedString.DocumentType.rtf],documentAttributes: &d)) ?? NSAttributedString(string: "")
             
             rtfView.textStorage?.setAttributedString(attributedRTF)
 
         } else {
-            rtfView.textStorage?.setAttributedString(
-                NSAttributedString(string: "           This content is unavailable",
-                                   attributes:
-                                    [NSAttributedString.Key.foregroundColor: NSColor.white,
-                                     NSAttributedString.Key.font : NSFont.systemFont(ofSize: 14)]
-                                  ))
+            rtfView.textStorage?.setAttributedString(errString)
         }
         return true
     }
@@ -263,6 +231,36 @@ extension String {
     func removeExtraSpaces() -> String {
         return self.replacingOccurrences(of: "[\\s\n]+", with: " ", options: .regularExpression, range: nil)
     }
+}
 
+extension ViewController {
+    func setFirebaseDataInTable(db : Firestore) async {
+        db.collection(Firebase.Auth.auth().currentUser!.uid).order(by: "time").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for doc in querySnapshot!.documents {
+                    let dbItem = CopiedDoc(html: doc["html"] as! String, rtf: doc["rtf"] as! String, time: doc["time"] as! String, plaintext: doc["plaintext"] as! String)
+                    
+                    self.dbArr.append(dbItem)
+                        
+                    let row  = self.dbArr.count
+                    if row >= 0 { self.tableView.insertRows(at: IndexSet(integer: row - 1), withAnimation: .slideUp) }
+                }
+            }
+        }
+    }
+    
+    func appendtoFirebaseUpdateTable(db: Firestore) async  {
+        do {
+            try await db.collection(Firebase.Auth.auth().currentUser!.uid).document().setData([
+                "html": html,
+                "time": time,
+                "rtf": rtf,
+                "plaintext": plaintext])
+        } catch {
+            print("Error updating Firebase")
+        }
+    }
 }
 

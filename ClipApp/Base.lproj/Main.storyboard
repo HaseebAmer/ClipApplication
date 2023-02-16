@@ -723,18 +723,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="504"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1F-7k-3LE">
+                            <scrollView horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" translatesAutoresizingMaskIntoConstraints="NO" id="M1F-7k-3LE">
                                 <rect key="frame" x="370" y="273" width="352" height="218"/>
                                 <clipView key="contentView" id="3QA-PU-d6t">
                                     <rect key="frame" x="1" y="1" width="350" height="216"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" drawsBackground="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" allowsDocumentBackgroundColorChange="YES" spellingCorrection="YES" smartInsertDelete="YES" id="xbL-bd-kRI">
-                                            <rect key="frame" x="0.0" y="0.0" width="295" height="215"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="295" height="197"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" red="0.021815773099660873" green="0.029143638908863068" blue="0.032499250024557114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <size key="minSize" width="390" height="206"/>
+                                            <size key="minSize" width="295" height="197"/>
                                             <size key="maxSize" width="399" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
@@ -743,8 +743,8 @@
                                     <edgeInsets key="contentInsets" left="8" right="9" top="6" bottom="13"/>
                                 </clipView>
                                 <edgeInsets key="contentInsets" left="5" right="6" top="6" bottom="7"/>
-                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="w29-tw-o0s">
-                                    <rect key="frame" x="-100" y="-100" width="540" height="16"/>
+                                <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="w29-tw-o0s">
+                                    <rect key="frame" x="5" y="195" width="341" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="BMU-Sh-xHy">
@@ -884,11 +884,11 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" drawsBackground="NO" importsGraphics="NO" verticallyResizable="NO" usesFontPanel="YES" allowsDocumentBackgroundColorChange="YES" spellingCorrection="YES" smartInsertDelete="YES" id="nj0-nX-WMc">
-                                            <rect key="frame" x="0.0" y="0.0" width="303" height="215"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="303" height="201"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" red="0.021815773099660873" green="0.029143638908863068" blue="0.032499250024557114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <size key="minSize" width="337" height="201"/>
+                                            <size key="minSize" width="303" height="201"/>
                                             <size key="maxSize" width="399" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
