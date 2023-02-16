@@ -730,11 +730,11 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" drawsBackground="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" allowsDocumentBackgroundColorChange="YES" spellingCorrection="YES" smartInsertDelete="YES" id="xbL-bd-kRI">
-                                            <rect key="frame" x="0.0" y="0.0" width="295" height="197"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="295" height="215"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" red="0.021815773099660873" green="0.029143638908863068" blue="0.032499250024557114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <size key="minSize" width="295" height="197"/>
+                                            <size key="minSize" width="390" height="206"/>
                                             <size key="maxSize" width="399" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
@@ -742,13 +742,13 @@
                                     <color key="backgroundColor" red="0.13280164600688923" green="0.13894970504547041" blue="0.14082228535353536" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <edgeInsets key="contentInsets" left="8" right="9" top="6" bottom="13"/>
                                 </clipView>
-                                <edgeInsets key="contentInsets" left="16" right="11" top="20" bottom="45"/>
+                                <edgeInsets key="contentInsets" left="5" right="6" top="6" bottom="7"/>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="w29-tw-o0s">
                                     <rect key="frame" x="-100" y="-100" width="540" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="BMU-Sh-xHy">
-                                    <rect key="frame" x="325" y="20" width="16" height="153"/>
+                                    <rect key="frame" x="330" y="6" width="16" height="205"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -888,20 +888,21 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" red="0.021815773099660873" green="0.029143638908863068" blue="0.032499250024557114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <size key="minSize" width="303" height="193"/>
-                                            <size key="maxSize" width="577" height="10000000"/>
+                                            <size key="minSize" width="337" height="201"/>
+                                            <size key="maxSize" width="399" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
                                     </subviews>
                                     <color key="backgroundColor" red="0.132801646" green="0.13894970500000001" blue="0.1408222854" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <edgeInsets key="contentInsets" left="8" right="5" top="8" bottom="6"/>
                                 </clipView>
-                                <edgeInsets key="contentInsets" left="10" right="18" top="5" bottom="19"/>
+                                <edgeInsets key="contentInsets" left="5" right="6" top="6" bottom="7"/>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="dDZ-RR-4zC">
                                     <rect key="frame" x="-100" y="-100" width="522" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="HoQ-xG-0Pw">
-                                    <rect key="frame" x="318" y="5" width="16" height="193"/>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="0.2857142857142857" horizontal="NO" id="HoQ-xG-0Pw">
+                                    <rect key="frame" x="330" y="6" width="16" height="204"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
