@@ -1,9 +1,9 @@
 # ClipApplication
 
-Clippy is an easy-to-use, macOS clipboard tracker. It stores the history of what you copy in two main formats:
-  HTML -  Can keep an exact record of content, including images and specific metadata (font, colour, size, etc). This format is mainly used for browsers
-  RTF - Users can store exact contents (like HMTL). This format is mainly used for apps such as Office 365 - retaining formatting
-  
+Clippy is an easy-to-use, macOS clipboard tracker. It stores the history of what you copy in two main formats:<br><br>
+  HTML - Specifically stores images and styling data (font, colour, size, etc), this format is directed to browsers<br>
+  RTF - Users can retain exact formatting(like HMTL). This format is mainly used for apps such as Office 365 which do not support HTML. <br>
+  <br><br>
 
 Features:
 - Account creation
