@@ -1260,9 +1260,9 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Cgq-T7-LQG">
-                                            <rect key="frame" x="38" y="138" width="233" height="36"/>
+                                            <rect key="frame" x="38" y="128" width="233" height="37"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="36" id="gqR-CE-Bf8"/>
+                                                <constraint firstAttribute="height" constant="37" id="gqR-CE-Bf8"/>
                                             </constraints>
                                             <textFieldCell key="cell" alignment="center" id="byr-MC-TvE">
                                                 <font key="font" metaFont="system" size="10"/>
@@ -1341,6 +1341,23 @@
                                                 </allowedInputSourceLocales>
                                             </secureTextFieldCell>
                                         </secureTextField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lIi-Sn-vdc">
+                                            <rect key="frame" x="172" y="168" width="82" height="11"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Forgot Password?" id="aGH-F8-baU">
+                                                <font key="font" metaFont="systemLight" size="9"/>
+                                                <color key="textColor" red="0.46527777780000001" green="0.44800639790000002" blue="0.4550596435" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0cW-UW-P4B">
+                                            <rect key="frame" x="169" y="156" width="89" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Forgot Password?" bezelStyle="rounded" alignment="center" borderStyle="border" transparent="YES" imageScaling="proportionallyDown" inset="2" id="Kce-Sf-ff3">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <color key="bezelColor" red="0.132801646" green="0.13894970500000001" blue="0.1408222854" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Rri-BX-bbB" firstAttribute="top" secondItem="xGa-67-fHY" secondAttribute="top" constant="94" id="2bA-XG-OKv"/>
@@ -1356,14 +1373,15 @@
                                         <constraint firstAttribute="bottom" secondItem="Uki-Q1-mas" secondAttribute="bottom" constant="97" id="9p0-vI-ePe"/>
                                         <constraint firstItem="Uha-GS-qky" firstAttribute="top" secondItem="xGa-67-fHY" secondAttribute="top" constant="76.5" id="A3a-TC-Hrk"/>
                                         <constraint firstItem="Uki-Q1-mas" firstAttribute="leading" secondItem="xGa-67-fHY" secondAttribute="leading" constant="51" id="ADM-XQ-8aw"/>
-                                        <constraint firstItem="Cgq-T7-LQG" firstAttribute="top" secondItem="6g9-oo-jZf" secondAttribute="bottom" constant="7" id="B9i-Ye-1Pr"/>
+                                        <constraint firstItem="Cgq-T7-LQG" firstAttribute="top" secondItem="6g9-oo-jZf" secondAttribute="bottom" constant="16" id="B9i-Ye-1Pr"/>
                                         <constraint firstItem="7bk-Ne-57i" firstAttribute="leading" secondItem="N09-ho-02q" secondAttribute="leading" id="BdI-vc-oB2"/>
                                         <constraint firstItem="lGb-X9-1Bh" firstAttribute="top" secondItem="9kf-n5-zcs" secondAttribute="bottom" constant="8" symbolic="YES" id="EQc-mO-2As"/>
                                         <constraint firstItem="Cgq-T7-LQG" firstAttribute="leading" secondItem="xGa-67-fHY" secondAttribute="leading" constant="40" id="Ecp-Z3-l9r"/>
+                                        <constraint firstItem="lIi-Sn-vdc" firstAttribute="trailing" secondItem="6g9-oo-jZf" secondAttribute="trailing" id="FJM-qg-Cmd"/>
                                         <constraint firstAttribute="bottom" secondItem="N09-ho-02q" secondAttribute="bottom" constant="187" id="GG5-Ji-CXl"/>
                                         <constraint firstItem="JRS-B0-lYl" firstAttribute="top" secondItem="Rri-BX-bbB" secondAttribute="bottom" constant="10.5" id="GKf-oP-EyS"/>
                                         <constraint firstItem="W6Z-l6-ER6" firstAttribute="top" secondItem="xGa-67-fHY" secondAttribute="top" constant="33" id="GbC-pC-Djk"/>
-                                        <constraint firstItem="9kf-n5-zcs" firstAttribute="top" secondItem="Cgq-T7-LQG" secondAttribute="bottom" constant="13" id="Gdh-P6-KKG"/>
+                                        <constraint firstItem="9kf-n5-zcs" firstAttribute="top" secondItem="Cgq-T7-LQG" secondAttribute="bottom" constant="3" id="Gdh-P6-KKG"/>
                                         <constraint firstItem="9kf-n5-zcs" firstAttribute="top" secondItem="Uki-Q1-mas" secondAttribute="top" id="GrK-QR-Ns3"/>
                                         <constraint firstAttribute="bottom" secondItem="9kf-n5-zcs" secondAttribute="bottom" constant="97" id="H9c-xx-5Ms"/>
                                         <constraint firstItem="Rri-BX-bbB" firstAttribute="top" secondItem="Uha-GS-qky" secondAttribute="bottom" constant="9.5" id="HWt-iK-tLz"/>
@@ -1374,7 +1392,7 @@
                                         <constraint firstAttribute="bottom" secondItem="M3Y-3S-l2u" secondAttribute="bottom" constant="38" id="LeW-jq-bnt"/>
                                         <constraint firstAttribute="bottom" secondItem="TGq-Kq-oa3" secondAttribute="bottom" constant="277" id="Nyb-2P-4qT"/>
                                         <constraint firstItem="w20-ee-dEc" firstAttribute="centerX" secondItem="M3Y-3S-l2u" secondAttribute="centerX" id="O4W-wg-KUQ"/>
-                                        <constraint firstAttribute="bottom" secondItem="Cgq-T7-LQG" secondAttribute="bottom" constant="138" id="OF3-2K-u10"/>
+                                        <constraint firstAttribute="bottom" secondItem="Cgq-T7-LQG" secondAttribute="bottom" constant="128" id="OF3-2K-u10"/>
                                         <constraint firstItem="6g9-oo-jZf" firstAttribute="top" secondItem="xGa-67-fHY" secondAttribute="top" constant="127" id="RUe-00-NwX"/>
                                         <constraint firstItem="6g9-oo-jZf" firstAttribute="top" secondItem="JRS-B0-lYl" secondAttribute="bottom" constant="9.5" id="SPr-7K-coD"/>
                                         <constraint firstItem="Uki-Q1-mas" firstAttribute="top" secondItem="xGa-67-fHY" secondAttribute="top" constant="185" id="Sd7-FX-Rv4"/>
@@ -1388,9 +1406,10 @@
                                         <constraint firstItem="M3Y-3S-l2u" firstAttribute="leading" secondItem="xGa-67-fHY" secondAttribute="leading" constant="52" id="XSg-TC-TGr"/>
                                         <constraint firstItem="9kf-n5-zcs" firstAttribute="leading" secondItem="Uki-Q1-mas" secondAttribute="leading" id="Xp6-Aa-nhd"/>
                                         <constraint firstItem="W6Z-l6-ER6" firstAttribute="leading" secondItem="xGa-67-fHY" secondAttribute="leading" constant="102" id="YIz-gc-hjN"/>
+                                        <constraint firstItem="lIi-Sn-vdc" firstAttribute="top" secondItem="N09-ho-02q" secondAttribute="bottom" constant="8" symbolic="YES" id="Z9U-WL-p14"/>
                                         <constraint firstItem="w20-ee-dEc" firstAttribute="leading" secondItem="M3Y-3S-l2u" secondAttribute="trailing" constant="-200" id="ZEp-aF-gU1"/>
                                         <constraint firstItem="6g9-oo-jZf" firstAttribute="leading" secondItem="xGa-67-fHY" secondAttribute="leading" constant="51" id="ZWx-RJ-e52"/>
-                                        <constraint firstItem="Cgq-T7-LQG" firstAttribute="top" secondItem="xGa-67-fHY" secondAttribute="top" constant="136" id="aDW-vs-hzK"/>
+                                        <constraint firstItem="Cgq-T7-LQG" firstAttribute="top" secondItem="xGa-67-fHY" secondAttribute="top" constant="145" id="aDW-vs-hzK"/>
                                         <constraint firstAttribute="trailing" secondItem="9kf-n5-zcs" secondAttribute="trailing" constant="57" id="ajh-NT-4m6"/>
                                         <constraint firstAttribute="trailing" secondItem="Uki-Q1-mas" secondAttribute="trailing" constant="57" id="avR-rK-huk"/>
                                         <constraint firstItem="Uha-GS-qky" firstAttribute="leading" secondItem="JRS-B0-lYl" secondAttribute="leading" id="bSE-jb-lt0"/>
@@ -1440,7 +1459,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="75.5" y="664"/>
+            <point key="canvasLocation" x="75" y="664"/>
         </scene>
     </scenes>
     <resources>
