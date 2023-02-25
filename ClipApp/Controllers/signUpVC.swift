@@ -19,18 +19,14 @@ class signUpVC: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-
+        
+        let signUpAttributes = [NSAttributedString.Key.foregroundColor: NSColor.darkGray, NSAttributedString.Key.font : NSFont.systemFont(ofSize: 11)]
+        
         email.placeholderAttributedString =
-        NSAttributedString(string:"Enter email",
-                           attributes:
-                            [NSAttributedString.Key.foregroundColor: NSColor.darkGray,
-                             NSAttributedString.Key.font : NSFont.systemFont(ofSize: 11)])
+        NSAttributedString(string:"Enter email", attributes:signUpAttributes)
         
         password.placeholderAttributedString =
-        NSAttributedString(string:"Enter password",
-                           attributes:
-                            [NSAttributedString.Key.foregroundColor: NSColor.darkGray,
-                             NSAttributedString.Key.font : NSFont.systemFont(ofSize: 11)])
+        NSAttributedString(string:"Enter password", attributes:signUpAttributes)
     }
     
     
