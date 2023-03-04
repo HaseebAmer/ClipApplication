@@ -15,6 +15,7 @@ class loginVC: NSViewController {
     private var passwordCell = ""
     
 
+    @IBOutlet weak var forgotPassword: NSButton!
     @IBOutlet weak var errorMessage: NSTextField!
     
     @IBOutlet weak var loginButton: NSButton!
